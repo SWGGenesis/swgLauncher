@@ -1,0 +1,58 @@
+{
+  "name": "genesis-launcher",
+  "version": "1.1.0",
+  "description": "SWGEMU Genesis Launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "build --win --ia32 -p always"
+  },
+  "repository": "https://github.com/JasonPHarris/Launchpad5",
+  "homepage": "http://swggenesis.site",
+  "keywords": [
+    "genesis",
+    "launcher",
+    "installer",
+    "swg",
+    "star",
+    "wars",
+    "galaxies",
+    "emulator",
+    "emu",
+    "swgemu"
+  ],
+  "author": "Progor",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "electron-builder": "^20.19.1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "electron-is-dev": "^0.2.0",
+    "electron-log": "^2.2.7",
+    "electron-updater": "^2.23.3",
+    "follow-redirects": "^1.2.4",
+    "random-access-file": "^1.8.1",
+    "request": "^2.87.0"
+  },
+  "build": {
+    "publish":[
+      {
+        "provider": "github",
+        "owner": "JasonPHarris",
+        "repo": "https://github.com/JasonPHarris/Launchpad"
+    }
+  ],
+    "productName": "Aftermath Launcher",
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "perMachine": true
+    }
+  }
+}
