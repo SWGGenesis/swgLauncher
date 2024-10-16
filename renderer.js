@@ -132,7 +132,7 @@ home.addEventListener('click', event => {
 });
 
 websiteBtn.addEventListener('click', event => shell.openExternal("http://swggenesis.com/"));
-discordBtn.addEventListener('click', event => shell.openExternal("https://discord.gg/se4hRN4F7w"));
+discordBtn.addEventListener('click', event => shell.openExternal("https://discord.gg/2vSSXBbZ"));
 
 browseBtn.addEventListener('click', function (event) {
     ipc.send('open-directory-dialog', 'selected-directory');
