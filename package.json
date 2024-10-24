@@ -8,7 +8,7 @@
     "build": "build --win --ia32 -p never"
   },
   "repository": "https://github.com/SWGGenesis/swgLauncher",
-  "homepage": "http://swggenesis.site",
+  "homepage": "http://swggenesis.com",
   "keywords": [
     "genesis",
     "launcher",
