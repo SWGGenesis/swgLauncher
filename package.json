@@ -1,0 +1,55 @@
+{
+  "name": "genesis-launcher",
+  "version": "1.1.0",
+  "description": "SWGEMU Genesis Launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "build --win --ia32 -p never"
+  },
+  "repository": "https://github.com/JasonPHarris/Launchpad",
+  "homepage": "http://swggenesis.site",
+  "keywords": [
+    "genesis",
+    "launcher",
+    "installer",
+    "swg",
+    "star",
+    "wars",
+    "galaxies",
+    "emulator",
+    "emu",
+    "swgemu"
+  ],
+  "author": "Progor, Ansho",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.0",
+    "electron-builder": "^20.19.1"
+  },
+  "electron-builder": {
+    "publishpolicy": "never"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "electron-is-dev": "^0.2.0",
+    "electron-log": "^4.0.0",
+    "electron-updater": "^4.0.0",
+    "follow-redirects": "^1.2.4",
+    "genesis-launcher": "file:",
+    "random-access-file": "^1.8.1",
+    "request": "^2.87.0"
+  },
+  "build": {
+    "productName": "Genesis Launcher",
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "perMachine": true
+    }
+  }
+}

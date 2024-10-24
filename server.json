@@ -1,0 +1,5 @@
+{
+    "address": "connect.swggenesis.com",
+    "port": "44453",
+    "manifestUrl": "https://github.com/SWGGenesis/tre-files/raw/master/manifest.json"
+}
