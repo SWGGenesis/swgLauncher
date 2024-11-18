@@ -97,7 +97,8 @@ profcalcBtn.addEventListener('click', function (event) {
 });
 
 function play() {
-    fs.writeFileSync(path.join(config.folder, "swgemu_login.cfg"), `[ClientGame]\r\nloginServerAddress0=${server.address}\r\nloginServerPort0=${server.port}\r\nfreeChaseCameraMaximumZoom=${config.zoom}`);
+    // line 101 is where to set the camera chase distance. replace ${config.zoom} with a number to set the max distance
+    fs.writeFileSync(path.join(config.folder, "swgemu_login.cfg"), `[ClientGame]\r\nloginServerAddress0=${server.address}\r\nloginServerPort0=${server.port}\r\nfreeChaseCameraMaximumZoom=${config.zoom}\r\n0fd345d9 = true\r\n[ClientUserInterface]\r\ndebugExamine = true`);
     var args = ["--",
         "-s", "ClientGame", "loginServerAddress0=" + server.address, "loginServerPort0=" + server.port,
         "-s", "Station", "gameFeatures=34929",
