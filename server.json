@@ -1,5 +1,5 @@
 {
-    "address": "connect.swggenesis.com",
+    "address": "genesistest.changeip.co",
     "port": "44453",
-    "manifestUrl": "https://github.com/SWGGenesis/tre-files/raw/master/manifest.json"
+    "manifestUrl": "https://github.com/SWGGenesis/tre-files/raw/testTre/manifest.json"
 }
